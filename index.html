@@ -9,28 +9,92 @@
     <link rel="stylesheet" href ="./css/style.css">
 </head>
 <body>
-    <h1 class="text-center mt-4">YOUR QUIZ TITLE HERE</h1>
+    <h1 class="mb-3" id="page-title">Welcome to the Personality Test!</h1> 
+    <p id="personality-instructions">Track what type of person you are.</p>
     
     <!-- Start quiz element -->
     <div class="container d-flex justify-content-center" id="question-1">
       <div class="card my-4 p-4 question-block" style="width: 75%;">
-        <h4 class="mb-3">YOUR QUIZ QUESTION HERE</h4>
+        <h4 class="mb-3">What would you rather do?</h4>
         <div class="row g-2">
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">ANSWER CHOICE A</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A" data-personality="Planner" data-points="3">Stay at home</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">ANSWER CHOICE B</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B" data-personality="Explorer" data-points="1">Go out and explore</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">ANSWER CHOICE C</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C" data-personality="Helper" data-points="2">Hangout with friends</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">ANSWER CHOICE D</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D" data-personality="Creative" data-points="4">Do a hobby</button>
           </div>
         </div>
       </div>
     </div>
+
+     <div class="container d-flex justify-content-center" id="question-1">
+      <div class="card my-4 p-4 question-block" style="width: 75%;">
+        <h4 class="mb-3">What is your favorite animal?</h4>
+        <div class="row g-2">
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A" data-personality="Helper" data-points="2">Dogs</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B" data-personality="Creative" data-points="4">Cats</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C" data-personality="Explorer" data-points="1">Birds</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D" data-personality="Planner" data-points="3">Fish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="container d-flex justify-content-center" id="question-1">
+      <div class="card my-4 p-4 question-block" style="width: 75%;">
+        <h4 class="mb-3">What would you do if someone need your help but you are in a rush?</h4>
+        <div class="row g-2">
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A" data-personality="Helper" data-points="2">Stay and help them</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B" data-personality="Explorer" data-points="1">Ignore them and keep going</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C" data-personality="Creative" data-points="4">Help for a little bit and then leave</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D" data-personality="Planner" data-points="3">Say that you can't help because you are in a rush</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="container d-flex justify-content-center" id="question-1">
+      <div class="card my-4 p-4 question-block" style="width: 75%;">
+        <h4 class="mb-3">How would you react if you won a million dollars?</h4>
+        <div class="row g-2">
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A" data-personality="Planner" data-points="3">Start saving money</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B" data-personality="Explorer" data-points="1">Go on a vacation</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C" data-personality="Helper" data-points="2">Help others</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D" data-personality="Creative" data-points="4">Spend it on something meaningful</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
     
     
@@ -38,6 +102,9 @@
 
     <!-- Add more quiz elements here -->
 
+    <div class="container d-flex justify-content-center">
+      <p id="output-message" class="text-center mt-3" aria-live="polite"></p>
+    </div>
 
 
     <div class="container d-flex justify-content-center">
